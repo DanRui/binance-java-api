@@ -8,7 +8,8 @@ public class BinanceApiConfig {
 	/**
 	 * Base domain for URLs.
 	 */
-	private static String BASE_DOMAIN = "binance.com";
+//	private static String BASE_DOMAIN = "binance.com";
+	private static String BASE_DOMAIN = "binancezh.cc";
 
 	/**
 	 * Set the URL base domain name (e.g., binance.com).

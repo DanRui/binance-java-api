@@ -13,7 +13,7 @@ import java.util.List;
 public class AccountEndpointsExample {
 
   public static void main(String[] args) {
-    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("YOUR_API_KEY", "YOUR_SECRET");
+    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("HCRU7CmERDlRuxu1FZ14H8k7V5xWQxOs0IS75MDJoigQDfpEfNWq1OSre5KMjEM1", "5WzwBubt38M8pTVlrlHTtv6iGJ8lXXOZtIBRwn0AdYqNY9qfpCz953QtE22Lpznx");
     BinanceApiRestClient client = factory.newRestClient();
 
     // Get account balances
@@ -22,19 +22,19 @@ public class AccountEndpointsExample {
     System.out.println(account.getAssetBalance("ETH"));
 
     // Get list of trades
-    List<Trade> myTrades = client.getMyTrades("NEOETH");
+    List<Trade> myTrades = client.getMyTrades("BTCUSDT");
     System.out.println(myTrades);
 
     // Get withdraw history
-    System.out.println(client.getWithdrawHistory("ETH"));
+    System.out.println(client.getWithdrawHistory("USDT"));
 
     // Get deposit history
-    System.out.println(client.getDepositHistory("ETH"));
+    System.out.println(client.getDepositHistory("USDT"));
 
     // Get deposit address
-    System.out.println(client.getDepositAddress("ETH"));
+    System.out.println(client.getDepositAddress("USDT"));
 
     // Withdraw
-    client.withdraw("ETH", "0x123", "0.1", null, null);
+//    client.withdraw("ETH", "0x123", "0.1", null, null);
   }
 }
